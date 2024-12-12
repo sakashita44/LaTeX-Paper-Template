@@ -1,5 +1,7 @@
 # About This LaTeX Repository
 
+## instructions for GitHub Copilot
+
 This repository is a workspace for the LaTeX source code for the academic paper.
 
 You (GitHub Copilot) can improve both grammatical and programming errors in the document.
@@ -15,3 +17,7 @@ Please assist in improving the paper by following the instructions below:
 2. Suggest improvements to the writing.
 3. Identify and correct inconsistencies in terminology and formatting.
 4. Point out and correct any inconsistencies in spelling and terminology.
+
+## Content of the paper
+
+This paper suggests a new finding in the field of X.
