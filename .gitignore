@@ -1,5 +1,6 @@
 ## my personal .gitignore file for LaTeX projects
 main.pdf
+.vscode/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
