@@ -2,8 +2,6 @@
 
 LaTeXを使用した論文執筆のための個人用テンプレート.
 
-VS Codeでの編集を想定しているため, `.vscode`ディレクトリも同梱している.
-
 * VS CodeのProfileテンプレートは[こちら](https://gist.github.com/sakashita44/d2b48b0dbb1fffc89f1da1d744b262bc#file-latex-vs-code-profile).
 
 この設定では, `uplatex`を使用してタイプセットしている
