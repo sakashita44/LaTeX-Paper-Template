@@ -1,0 +1,32 @@
+name: Calculate Diff
+
+on:
+    push:
+        tags:
+            - 'v*'
+
+jobs:
+    diff:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+
+        - name: Fetch all tags
+          run: git fetch --tags
+
+        - name: Calculate diff
+          run: |
+            TAGS=$(git tag --sort=-creatordate | head -n 2)
+            TAG_ARRAY=($TAGS)
+            if [ ${#TAG_ARRAY[@]} -eq 2 ]; then
+                git diff ${TAG_ARRAY[1]} ${TAG_ARRAY[0]} > diff.log
+            else
+                echo "Not enough tags to calculate diff" > diff.log
+
+        - name: Upload diff log
+          uses: actions/upload-artifact@v2
+          with:
+              name: diff-log
+              path: diff.log
