@@ -22,4 +22,5 @@ GitHub Copilotに対して`.github/copilot-instructions.md`を提示して文章
 
 TODO
 
-* 将来的にはdocker等を使用してLaTeX環境を構築したい
+* latexdiffを使用して差分を表示するスクリプトを追加する
+* 将来的にはdocker等を使用してLaTeX環境を構築する
